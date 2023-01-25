@@ -1,0 +1,17 @@
+.div{
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #131313;
+    color: white;
+    margin: 40px;
+    transition: 1s;
+}
+
+.div:hover{
+    transform: scale(1.2);
+}
+
+img{
+    height: 150px;
+}

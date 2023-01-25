@@ -1,0 +1,86 @@
+.nav{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    left: 20px;
+    color: #c8417a;
+    align-items: center;
+    height: 65px;
+    width: auto;
+    cursor: pointer;
+}
+
+
+.descargarCV button{
+    background-color: #c8417a;
+    border: none;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    background-color: #c8417a;  
+    left:500%;
+    height: 40px;
+    width: 150px;
+    margin: auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.descargarCV button:hover{
+    background-color: white;
+    color: #c8417a;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 400px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.nav h3{
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.nav img{
+    height: 50px;
+    width: auto;
+    margin-right: 50px;
+}
+
+.nav h3:hover{
+    background-color: #CE1F67;
+    color: #131313;
+    padding: 21px;
+}
+
+@media screen and (max-width: 500px) {
+    .nav{
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: auto;
+    }
+    .nav h3{
+        position: relative;
+        top: 0px;
+    }
+    .nav h3:hover{
+        padding: 17px;
+    }
+}
+
+@media screen and (max-width: 389px) {
+    .nav{
+        font-size: 8px;
+    }
+    .nav img{
+        height: 30px;
+    }
+}
