@@ -31,8 +31,10 @@ function Home(){
         <div className={styles.div}>
             <img draggable="false" className={styles.header} src="https://global-uploads.webflow.com/5f5a53e153805db840dae2db/6073fbc8ece768495cc698ca_programador-senior.jpeg" alt="" />
             <div className={styles.cuerpo}>
-                <img className={styles.foto} src={foto} alt="" />
-                <h1 className={styles.titulacion}>Junior Developer</h1>
+                <div className={styles.texto2}>
+                    <img className={styles.foto} src={foto} alt="" />
+                    <h1 className={styles.titulacion}>Junior Developer</h1>
+                </div>
                 <div className={styles.texto}>
                     <h1>Jeronimo Vilar</h1>
                     <p className={styles.rango}>Front-End Developer</p>

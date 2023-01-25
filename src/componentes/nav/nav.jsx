@@ -11,7 +11,7 @@ function Nav(){
         window.scroll(0, 2090)
     }
     function scrollProyects(){
-        window.scroll(0, 1090)
+        window.scroll(0, 900)
     }
     function scrollContact(){
         window.scroll(0, 3090)

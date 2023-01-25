@@ -10,9 +10,10 @@
     width: 100%;
     position: relative;
     bottom: 0px;
-    height: 1000px;
+    height: 900px;
     object-fit: cover;
     opacity: 0.3;
+    z-index: 1;
 }
 
 .cuerpo{
@@ -22,7 +23,7 @@
 
 .texto{
     position: absolute;
-    top: -550px;
+    top: -700px;
     left: 200px;
 }
 
@@ -58,12 +59,13 @@
     color: white;
 }
 
-
-.titulacion{
+.texto2{
+    display: flex;
+    flex-direction:column;
     position: absolute;
-    top: -420px;
-    left: 1200px;
-    color: white;
+    left: 1100px;
+    top: -850px;
+    z-index: 10;
 }
 
 .cards1{
@@ -78,14 +80,11 @@
 
 .foto{
     position: relative;
-    left: 400px;
-    top: -720px;
     height: 300px;
     width: 300px;
     object-fit: cover;
     border-radius: 9999rem;
     border:5px solid #fa52986d;
-    transition: 1s;
 }
 
 .cuerpo{
@@ -136,15 +135,16 @@
 
 .proyectos{
     position: relative;
-    top: -270px;
+    top: -170px;
     color: white;
-    margin: 120px;
+    margin: 320px;
 }
 
 .proyectosimg{
     height: 600px;
-    position: relative;
-    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .flechitas{
@@ -153,8 +153,12 @@
 }
 
 .flechas{   
-    position: relative;
+    display: flex;
+    position: absolute;
+    justify-content: center;
     top: 250px;
+    width: 100%;
+    gap: 1000px;
 }
 
 .flechitas1{
@@ -167,10 +171,11 @@
 
 .flechita2{
     height: 100px;
-    margin-left: 1100px;
     background-color: #fa52986d;
     border-radius: 100px;
     z-index: 10;
+    position: relative;
+    left: 100px;
 }
 
 .logos1{
