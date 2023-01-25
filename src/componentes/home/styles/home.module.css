@@ -10,7 +10,7 @@
     width: 100%;
     position: relative;
     bottom: 0px;
-    height: 900px;
+    height: 1000px;
     object-fit: cover;
     opacity: 0.3;
     z-index: 1;
@@ -23,7 +23,7 @@
 
 .texto{
     position: absolute;
-    top: -700px;
+    top: -850px;
     left: 200px;
 }
 
@@ -64,7 +64,7 @@
     flex-direction:column;
     position: absolute;
     left: 1100px;
-    top: -850px;
+    top: -1000px;
     z-index: 10;
 }
 

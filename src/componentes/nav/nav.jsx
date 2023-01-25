@@ -8,7 +8,7 @@ function Nav(){
     const [transition, setTransition] = useState("1s")
 
     function scrollTechnologies(){
-        window.scroll(0, 2090)
+        window.scroll(0, 1975)
     }
     function scrollProyects(){
         window.scroll(0, 900)
