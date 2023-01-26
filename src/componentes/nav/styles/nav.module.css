@@ -2,12 +2,13 @@
     display: flex;
     justify-content: left;
     position: relative;
-    left: 20px;
+    left: 2vw;
     color: #c8417a;
     align-items: center;
-    height: 65px;
-    width: auto;
+    height: 7vh;
+    width: 25vw;
     cursor: pointer;
+    font-size: 1vw;
 }
 
 
@@ -15,15 +16,17 @@
     background-color: #c8417a;
     border: none;
     position: relative;
-    border: none;
     border-radius: 20px;
-    background-color: #c8417a;  
-    left:500%;
-    height: 40px;
-    width: 150px;
-    margin: auto;
+    left: 40vw;
+    height: 2vw;
+    width: 9vw;
+    margin-left: auto;
     transition: 0.5s;
     cursor: pointer;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .descargarCV button:hover{
@@ -35,52 +38,152 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 400px;
+    gap: 20vw;
     width: 100%;
     position: fixed;
     z-index: 10;
 }
 
 .nav h3{
-    padding: 20px;
+    padding: 0.7vw;
     transition: 0.5s;
+    gap: 1vw;
+    font-size: 1vw;
 }
 
 .nav img{
-    height: 50px;
+    height:2.5vw;
     width: auto;
-    margin-right: 50px;
+    margin-right: 2vw;
 }
 
 .nav h3:hover{
     background-color: #CE1F67;
     color: #131313;
-    padding: 21px;
+    padding: 0.7vw;
 }
 
-@media screen and (max-width: 500px) {
-    .nav{
-        font-size: 10px;
-        display: flex;
+@media screen and (max-width: 900px) {
+    .contenedor{
         justify-content: center;
-        align-items: center;
-        height: 50px;
-        width: auto;
+        gap: 0px;
     }
-    .nav h3{
+    .nav{
+        display: flex;
+        justify-content: left;
         position: relative;
-        top: 0px;
+        left: 0.9vw;
+        color: #c8417a;
+        align-items: center;
+        height: 13vh;
+        width: 25vw;
+        cursor: pointer;
+        font-size: 1vw;
     }
+    
+    
+    .descargarCV button{
+        background-color: #c8417a;
+        border: none;
+        position: relative;
+        border-radius: 20px;
+        height: 4vw;
+        width: 20vw;
+        transition: 0.5s;
+        cursor: pointer;
+        font-size: 1vw;
+        display: flex;
+        left: -13vw;
+        top: 4vw;
+        align-items: center;
+    }
+    
+    .descargarCV button:hover{
+        background-color: white;
+        color: #c8417a;
+    }
+    
+    .nav h3{
+        padding: 0.7vw;
+        transition: 0.5s;
+        gap: 1vw;
+        font-size: 2vw;
+    }
+    
+    .nav img{
+        height:6vw;
+        width: auto;
+        margin-right: 2vw;
+        position: relative;
+        bottom: 4vw;
+        left: 18vw;
+    }
+    
     .nav h3:hover{
-        padding: 17px;
+        background-color: #CE1F67;
+        color: #131313;
+        padding: 0.7vw;
     }
 }
 
-@media screen and (max-width: 389px) {
-    .nav{
-        font-size: 8px;
+@media screen and (max-width: 412px) {
+    .contenedor{
+        justify-content: center;
+        gap: 0px;
     }
+    .nav{
+        display: flex;
+        justify-content: left;
+        position: relative;
+        left: -9vw;
+        color: #c8417a;
+        align-items: center;
+        height: 13vh;
+        width: 25vw;
+        cursor: pointer;
+        font-size: 1vw;
+    }
+    
+    
+    .descargarCV button{
+        background-color: #c8417a;
+        border: none;
+        position: relative;
+        border-radius: 20px;
+        height: 8vw;
+        width: 40vw;
+        transition: 0.5s;
+        cursor: pointer;
+        font-size: 3vw;
+        display: flex;
+        left: -13vw;
+        top: 8vw;
+        align-items: center;
+    }
+    
+    .descargarCV button:hover{
+        background-color: white;
+        color: #c8417a;
+    }
+    
+    .nav h3{
+        transition: 0.5s;
+        gap: 1vw;
+        font-size: 4vw;
+    }
+    
     .nav img{
-        height: 30px;
+        height:12vw;
+        width: auto;
+        margin-right: 2vw;
+        position: relative;
+        bottom: 10vw;
+        left: 35vw;
+    }
+    
+    .nav h3:hover{
+        background-color: #CE1F67;
+        color: #131313;
+        padding: 0.7vw;
     }
 }

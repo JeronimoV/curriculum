@@ -29,8 +29,8 @@ function Home(){
     }
     return (
         <div className={styles.div}>
-            <img draggable="false" className={styles.header} src="https://global-uploads.webflow.com/5f5a53e153805db840dae2db/6073fbc8ece768495cc698ca_programador-senior.jpeg" alt="" />
-            <div className={styles.cuerpo}>
+            <div className={styles.header}></div>
+            <div className={styles.contenedor}>
                 <div className={styles.texto2}>
                     <img className={styles.foto} src={foto} alt="" />
                     <h1 className={styles.titulacion}>Junior Developer</h1>
@@ -40,11 +40,13 @@ function Home(){
                     <p className={styles.rango}>Front-End Developer</p>
                     <p className={styles.presentacion}>I am currently taking the SoyHenry bootcamp, in module 3. Before the bootcamp I had knowledge of HTML, css and a bit of Javascript, currently I have knowledge of advanced HTML, advanced CSS, advanced Javascript, React.js, Redux. I also have experience as a Community Manager and Graphic Designer, so I know how to get people's attention and apply SEO correctly. ACLARATION: To see my curriculum you need to ask me for pemission, the CV is in Google Drive, or, talk to me in Contact</p>
                 </div>
+            </div>
+            <div className={styles.contenedor1}>
                 <div className={styles.proyectos}>
-                    <h1>Proyectos</h1>
-                    <p>There are all my proyects, to see them, just click the image</p>
+                    <h1 className={styles.tituloide}>Proyectos</h1>
+                    <p className={styles.textoide}>There are all my proyects, to see them, just click the image</p>
                     <div className={styles.flechitas}>
-                        <div className={styles.flechas}>
+                    <div className={styles.flechas}>
                             <img draggable="false" onClick={() => handleClickRight()} className={styles.flechitas1} src="https://img.freepik.com/iconos-gratis/flecha-correcta_318-874137.jpg?w=2000" alt="" />
                             <img draggable="false" onClick={() => handleClickLeft()}  className={styles.flechita2} src="https://img.freepik.com/iconos-gratis/flecha-correcta_318-874137.jpg?w=2000" alt="" />
                         </div>
@@ -54,6 +56,9 @@ function Home(){
                             <img draggable="false"  style={{"opacity": opacicad, "transition": "1s"}} onMouseEnter={() => mostrarLink()} onMouseLeave={() => quitarLink()} className={styles.proyectosimg} src={imagen} alt="" />
                     </div>
                 </div>
+            </div>
+
+            <div className={styles.contenedor2}>
                 <div className={styles.div1}>
                     <h1 className={styles.titulo1}>knowledge</h1>
                     <p className={styles.text1}> I know how to use these technologies </p>
@@ -61,7 +66,7 @@ function Home(){
                         <div className={styles.cards1}>
                             <Card tecnologia={"HTML"} experiencia={"Without work experience"} img={"https://cdn-icons-png.flaticon.com/512/174/174854.png"}></Card>
                             <Card tecnologia={"CSS"} experiencia={"Without work experience"} img={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/250px-CSS3_logo.svg.png"}></Card>
-                            <Card tecnologia={"JavaScript"} experiencia={"Without work experience"} img={"https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"}></Card>
+                            <Card tecnologia={"JavaScript"} experiencia={"Without work experience"} img={"https://i0.wp.com/blog.canadianwebhosting.com/wp-content/uploads/2018/04/javascript-logo.png?ssl=1"}></Card>
                         </div>
                             <div className={styles.cards2}>
                                 <Card tecnologia={"React"} experiencia={"Without work experience"} img={"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"}></Card>
@@ -69,16 +74,22 @@ function Home(){
                             </div>
                         </div>
                 </div>
+            </div>
+
+            <div className={styles.contenedor3}>
                 <div className={styles.redes}>
                     <h1>Contact</h1>
                     <p>For all that tou need, you can contact me, i will answer as fast is possible</p>
-                    <a href="https://wa.me/1164835449"><img draggable="false" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt=""></img></a>
-                    <a href="https://www.linkedin.com/in/jeronimo-vilar-457295245/"><img  draggable="false" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" /></a>
-                    <a href="https://www.t.me/JeronimoVilarDG"><img  draggable="false" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png" alt="" /></a>
-                    <a href="https://github.com/Bobardou"><img  draggable="false" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></a>
+                    <div className={styles.contacto}>
+                        <a href="https://wa.me/1164835449"><img draggable="false" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt=""></img></a>
+                        <a href="https://www.linkedin.com/in/jeronimo-vilar-457295245/"><img  draggable="false" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" /></a>
+                        <a href="https://www.t.me/JeronimoVilarDG"><img  draggable="false" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png" alt="" /></a>
+                        <a href="https://github.com/Bobardou"><img  draggable="false" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></a>
+                    </div>
                 </div>
             </div>
-        </div>
+            </div>
+
     )
 }
 

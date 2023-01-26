@@ -1,11 +1,20 @@
 .div{
-    height: 300px;
-    width: 250px;
+    height: 340px;
+    width: 340px;
     border-radius: 20px;
     background-color: #131313;
     color: white;
-    margin: 40px;
+    margin: 2vw;
     transition: 1s;
+    text-align: center;
+}
+
+.div h1{
+    font-size: 2vw;
+}
+
+.div h3{
+    font-size: 1vw;
 }
 
 .div:hover{
@@ -13,5 +22,17 @@
 }
 
 img{
-    height: 150px;
+    height: 190px;
+}
+
+@media screen and (max-width: 1400px) {
+    .div{
+        height: auto;
+        width: 25vw;
+    }
+    img{
+        height: 15vw;
+        width: auto;
+    }
+    
 }

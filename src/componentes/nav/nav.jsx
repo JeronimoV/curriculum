@@ -3,37 +3,40 @@ import logo from "./styles/logo.png"
 import { useState } from "react"
 
 function Nav(){
-    const [backgroundColor, setBackgroundColor] = useState("#131313")
-    const [position, setPosition] = useState("relative")
-    const [transition, setTransition] = useState("1s")
+        const [backgroundColor, setBackgroundColor] = useState("#131313")
+        const [transition, setTransition] = useState("1s")
+        const estilos = {
+            backgroundColor: backgroundColor,
+            transition:transition
+        }
 
     function scrollTechnologies(){
-        window.scroll(0, 1975)
+        window.scroll(0, 1950)
     }
     function scrollProyects(){
-        window.scroll(0, 900)
+        window.scroll(0, 1000)
     }
     function scrollContact(){
-        window.scroll(0, 3090)
+        window.scroll(0, 3000)
     }
     function scrollTop(){
         window.scroll(0, 0)
     }
+    
+
     window.onscroll = function desvancerer(){
         let scrolldistance = document.documentElement.scrollTop
-        if(scrolldistance >= 100){
+        if(scrolldistance >= 100 && window.screen.width > 900){
             setBackgroundColor(null)
-            setPosition("fixed")
             setTransition("1s")
         }
-        if(scrolldistance < 100){
+        if(scrolldistance < 100 && window.screen.width > 900){
             setBackgroundColor("#131313")
-            setPosition("fixed")
             setTransition("1s")
         }
     }
     return(
-        <div className={styles.contenedor}  style={{backgroundColor: backgroundColor, position: position, transition: transition}}>
+        <div className={styles.contenedor}  style={estilos}>
             <div>
                 <nav className={styles.nav}>
                     <img onClick={() => scrollTop()} src={logo} alt="" />
